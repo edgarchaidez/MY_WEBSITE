@@ -1,0 +1,63 @@
+.Projects {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 2vh;
+}
+
+.Projects h2 {
+    font-size: calc(16px + 2vmin);
+    font-weight: 100;
+    opacity: 0.8;
+    margin-left: 0.5vw;
+}
+
+.Proj {
+    font-size: calc(16px + 1.5vmin);
+    font-weight: 100;
+    opacity: 0.8;
+    margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+    .Proj{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.app-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-images1 {
+    height: 40%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.app-images2 {
+    height: 40%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+@media (min-width: 700px) {
+    .app_images {
+    }
+    .app-images1 {
+        width: 30%;
+        height: 30%;
+        border-radius: 5px;
+        padding-right: 6rem;
+    }
+    
+    .app-images2 {
+        height: 30%;
+        width: 30%;
+        border-radius: 5px;
+        padding-left: 6rem;
+    }
+}

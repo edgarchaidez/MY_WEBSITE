@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+.name {
+  padding-top: calc(20px - 1vh);
+  font-size: calc(16px + 2.5vmin);
+  margin: 0;
+}
+
+
+
+
+
