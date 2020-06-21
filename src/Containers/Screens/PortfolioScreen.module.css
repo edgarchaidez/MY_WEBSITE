@@ -1,0 +1,23 @@
+.PortfolioScreen {
+    text-align: left;
+    margin: 0 10px 0 10px;
+    width: 80%;
+    border: none;
+}
+
+.SocialMedias {
+    display: flex;
+    justify-content: center; 
+}
+
+.SMColor {
+    color: black;
+}
+
+@media (max-width: 375px) {
+    .Proj{
+        margin: 0;
+        width: 100%;
+    }
+}
+

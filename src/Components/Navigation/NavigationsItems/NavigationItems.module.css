@@ -1,0 +1,8 @@
+.NavigationItems {
+    font-family: Roboto;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 500px) {
+}

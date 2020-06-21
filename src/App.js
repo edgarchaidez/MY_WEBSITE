@@ -1,30 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { Route } from 'react-router-dom'
+
 import './App.css';
-import AboutScreen from './Screens/AboutScreen';
-import PortfolioScreen from './Screens/PortfolioScreen';
-import Header from './Components/Header';
-import Nav from './Components/Nav';
+import Layout from './Containers/Layout/Layout';
+import AboutScreen from './Containers/Screens/AboutScreen';
+import PortfolioScreen from './Containers/Screens/PortfolioScreen';
 
 function App() {
 
-  let content = <AboutScreen />;
-  let clicked = false;
-  const[currentState, setCurrentState]= useState(content);
-
-  const clickHandler = () => {
-    if(content = <AboutScreen />) {
-      content = <PortfolioScreen />;
-      setCurrentState(content);
-    }
-  }
-
-  return (
-    <div className="App">
-      <Header />
-      <Nav click={clickHandler}/>  
-      <h1 className="name"> Edgar Chaidez </h1>
-      {currentState}
-    </div>
+return (
+    <Layout>
+      <Route path="/" exact component={PortfolioScreen}/>
+      <Route path="/about-me" component={AboutScreen}/>
+    </Layout>
   );
 }
 

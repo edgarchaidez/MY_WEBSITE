@@ -1,0 +1,26 @@
+.Button {
+    padding: 0;
+    height: 34px;
+    line-height: 33px !important;
+    width: 120px;
+    margin: 0.5rem;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.Button a {
+    text-decoration: none;
+    color:#000;
+    width: 100%;
+}
+
+.Button a:hover {
+    transition: opacity .3s ease, background-color .3s ease, color .3s ease;
+    background-color: #000;
+    text-decoration: none;
+    color:#fff;
+}

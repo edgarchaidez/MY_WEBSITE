@@ -1,12 +1,47 @@
-.HeaderNav {
-    text-align: center;
+.Navigation {
+    /* text-align: center;
     width: 100%;
     margin: 0 auto;
     margin-top: 4vh;
     padding: 0;
-    text-transform: uppercase;
+    text-transform: uppercase; */
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.NavHide {
+  display: none;
+}
+
+.NavShow {
+  display: flex;
+}
+
+.MuiIconButton {
+  opacity: 0.6;
+}
+
+.MuiIconButton:hover{
+  opacity: 1;
+}
+
+@media (min-width: 500px) {
+  .Navigation nav { 
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
   }
-  .js-flow-checkout .HeaderNav {
+
+  .MuiIconButton {
+    display: none;
+  }
+}
+
+  /* .js-flow-checkout .Nav {
     display: none;
   }
   
@@ -102,4 +137,4 @@
   
   .NavLi_item_disabled {
     opacity: 0.2 !important;
-  }
+  } */
