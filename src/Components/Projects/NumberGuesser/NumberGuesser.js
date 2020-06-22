@@ -16,8 +16,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 const NumberGuesser = () => {
   return (
-    <Card elevation={2}>
-      <div>
+    <Card elevation={2} square="false">
         <CardContent>
           <Typography variant="body" color="textPrimary" component="h3">
             React Native Mobile App
@@ -47,7 +46,6 @@ const NumberGuesser = () => {
           </IconButton>
           </Tooltip>
         </div>
-      </div>
     </Card>
   );
 };

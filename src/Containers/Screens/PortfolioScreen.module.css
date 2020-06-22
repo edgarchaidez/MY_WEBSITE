@@ -1,23 +1,45 @@
-.PortfolioScreen {
+.Sections {
     text-align: left;
     margin: 0 10px 0 10px;
     width: 80%;
     border: none;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    letter-spacing: 0.03em;
+}
+
+.Sections h2 {
+    text-align: center;
+}
+
+.Sections p {
+    text-transform: none;
 }
 
 .SocialMedias {
     display: flex;
     justify-content: center; 
+    margin-bottom: 50px;
 }
 
 .SMColor {
     color: black;
 }
 
-@media (max-width: 375px) {
+.Bio {
+    width: 70%;
+    line-height: 1.8em;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 500px) {
     .Proj{
         margin: 0;
         width: 100%;
+    }
+
+    .Bio {
+        width: 90%;
     }
 }
 
