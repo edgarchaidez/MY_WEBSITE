@@ -1,4 +1,4 @@
-.app-images {
+.Images {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
@@ -6,15 +6,13 @@
     margin-bottom: 20px;
 }
 
-.app-images1 {
-    width: 70%;
-    border-radius: 30px;
+.Images1 {
+    width: 90%;
     margin-bottom: 20px;
 }
 
-.app-images2 {
-    width: 70%;
-    border-radius: 30px;
+.Images2 {
+    width: 90%;
 }
 
 .icon {
@@ -25,12 +23,12 @@
 
 @media (min-width: 500px) {
 
-    .app-images1 {
-        width: 30%;
+    .Images1 {
+        width: 40%;
         margin-bottom: 0;
     }
     
-    .app-images2 {
-        width: 30%;
+    .Images2 {
+        width: 40%;
     }
 }

@@ -2,13 +2,12 @@ import React from 'react';
 
 import app1 from "../../../assets/app1.png";
 import app2 from "../../../assets/app2.png";
-import Card1 from "../../Card/Card";
+import CardUI from '../../../shared/Card/CardUI';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import { Card } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { IconButton } from '@material-ui/core';
 import classes from './NumberGuesser.module.css';
@@ -16,7 +15,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 const NumberGuesser = () => {
   return (
-    <Card elevation={2} square="false">
+    <CardUI>
         <CardContent>
           <Typography variant="body" color="textPrimary" component="h3">
             React Native Mobile App
@@ -46,7 +45,7 @@ const NumberGuesser = () => {
           </IconButton>
           </Tooltip>
         </div>
-    </Card>
+    </CardUI>
   );
 };
 

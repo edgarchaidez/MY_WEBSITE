@@ -1,7 +1,6 @@
 import React from 'react';
 
 import capstone from "../../../assets/capstone.png";
-import Card1 from "../../Card/Card";
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
