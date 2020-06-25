@@ -6,13 +6,13 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import { Card } from '@material-ui/core';
+import CardUI from '../../../shared/Card/CardUI';
 import classes from './Capstone.module.css';
 
 
 const Capstone = () => {
   return (
-    <Card elevation={2} square="false" className={classes.Card}>
+    <CardUI>
       <CardContent>
         <Typography variant="body" color="textPrimary" component="h3">
           NASA Psyche Space Virtual Reality Capstone Project
@@ -25,10 +25,9 @@ const Capstone = () => {
         <img
           src={capstone}
           alt="NASA Psyche Reality Capstone Project, ASU"
-          className={classes.img}
         />
       </div>
-    </Card>
+    </CardUI>
   );
 };
   

@@ -5,6 +5,7 @@ import classes from "./PortfolioScreen.module.css";
 import NumberGuesser from '../../Components/Projects/NumberGuesser/NumberGuesser';
 import Capstone from '../../Components/Projects/Capstone/Capstone';
 import ToDoList from '../../Components/Projects/ToDoList/ToDoList';
+import WindAPI from '../../Components/Projects/WindAPI/WindAPI';
 import Website from '../../Components/Projects/Website/Website';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -76,6 +77,7 @@ const PortfolioScreen = () => {
             <Capstone />
             <NumberGuesser />
             <ToDoList />
+            <WindAPI />
             <Website/>
           </body>
         </div>

@@ -9,8 +9,9 @@
 .headerStyle {
     width: 100vw;
     height: 10px;
-    background-color: rgb(44, 92, 233) ;
-    border-left: 50vw solid rgb(255, 220, 22);
+    /*background-color: rgb(44, 92, 233) ;
+    border-left: 50vw solid rgb(255, 220, 22);*/
+    background: linear-gradient(90deg, #ffcc01 50%, #0055ff 0);
     position: fixed;
 }
 

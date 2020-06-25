@@ -1,0 +1,27 @@
+.Images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Images img {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon a:hover{
+    color: black !important;
+}
+
+@media (min-width: 500px) {
+    .Images img {
+        width: 98%;
+    }
+}

@@ -1,0 +1,17 @@
+.Course {
+    height: 20px;
+    line-height: 33px !important;
+    margin: 0.5rem;
+    border: 1px solid #F0F0F0;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.Course p {
+    font-size: 13px;
+}
+
+
+
+
