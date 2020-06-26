@@ -1,24 +1,29 @@
 .About {
-    width: 70%;
+    width: 80%;
     line-height: 1.8em;
     letter-spacing: 0.03em;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 20px;
 }
 
-.About h1 {
-    align-self: center;
-    margin-bottom: 70px;
+.About h3 {
+    margin-bottom: 0;
 }
 
 .About p {
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
-.Playlist {
+.Contact{
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.Contact p {
+    margin-top: 0;
 }

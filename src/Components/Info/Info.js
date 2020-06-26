@@ -13,7 +13,7 @@ const Info = () => {
     return (
         <div className={classes.SocialMedias}>
           <Tooltip title="My Email">
-            <IconButton href="mailto:echaide1@asu.edu" target="_blank">
+            <IconButton href="mailto:edgar.chaidez3@gmail.com" target="_blank">
               <MailOutlineIcon style={{ color: "black" }} fontSize="large" />
             </IconButton>
           </Tooltip>

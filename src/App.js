@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 import './App.css';
 import Layout from './Containers/Layout/Layout';
@@ -11,7 +11,8 @@ function App() {
 return (
     <Layout>
       <Route path="/" exact component={PortfolioScreen}/>
-      <Route path="/about-me" component={AboutScreen}/>
+      <Route path="/about" component={AboutScreen}/>
+      <Redirect to="/" />
     </Layout>
   );
 }

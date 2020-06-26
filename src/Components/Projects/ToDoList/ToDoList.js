@@ -2,6 +2,7 @@ import React from 'react';
 
 import ToDoList1 from "../../../assets/ToDoList1.png";
 import ToDoList2 from "../../../assets/ToDoList2.png";
+import toDoList from '../../../assets/to_do_list.jar';
 import CardUI from '../../../shared/Card/CardUI';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import { IconButton } from '@material-ui/core';
@@ -46,7 +47,7 @@ const ToDoList = () => {
       <div className={classes.icon}>
         <Tooltip title="The Github repository for this project is private but you can use the application through this tar file download.">
           <IconButton
-            href="https://firebasestorage.googleapis.com/v0/b/my-website-e2015.appspot.com/o/to_do_list.jar?alt=media&token=676c1603-6531-440a-8619-354d52e38b10"
+            href={toDoList}
             download
           >
             <GetAppIcon color="inherit" fontSize="large" />

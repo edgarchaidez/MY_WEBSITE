@@ -33,7 +33,7 @@ const PortfolioScreen = () => {
             software/full-stack engineer. I've always been interested in
             creating user facing applications and especially ones that
             hopefully make people's lives a bit better. I'm also continuing my
-            education with a Master of Computer Science at ASU so
+            education with a Master of Computer Science degree at ASU and so
             internship opportunities are also welcomed.
           </p>
         </div>

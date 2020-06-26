@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CardUI from '../../shared/Card/CardUI';
+import { Card } from '@material-ui/core';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -29,7 +29,7 @@ const Skills = () => {
     ];
 
     return (
-      <CardUI>
+      <Card elevation={2} square style={{marginBottom: "50px"}}>
         <TableContainer style={{ maxHeight: "460px" }}>
           <Table stickyHeader aria-label="sticky table" >
             <TableHead >
@@ -63,7 +63,7 @@ const Skills = () => {
             </TableBody>
           </Table>
         </TableContainer>
-      </CardUI>
+      </Card>
     );
 };
 
