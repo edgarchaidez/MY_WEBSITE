@@ -8,13 +8,7 @@ import ToDoList from '../../Components/Projects/ToDoList/ToDoList';
 import WindAPI from '../../Components/Projects/WindAPI/WindAPI';
 import Website from '../../Components/Projects/Website/Website';
 
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-
-import { IconButton } from '@material-ui/core';
-import Tooltip from '@material-ui/core/Tooltip';
+import Info from '../../Components/Info/Info';
 import ResumeButton from '../../Components/Buttons/ResumeButton';
 import Education from '../../Components/Education/Education';
 import Skills from '../../Components/Skills/Skills';
@@ -23,29 +17,10 @@ const PortfolioScreen = () => {
 
     return (
       <React.Fragment>
-        <h1 style={{ fontFamily: "Roboto", marginBottom: "0" }}>
+        <h1 style={{ marginBottom: "0" }}>
           EDGAR CHAIDEZ
         </h1>
-        <div className={classes.SocialMedias}>
-          <Tooltip title="My Email">
-            <IconButton href="mailto:echaide1@asu.edu" target="_blank">
-              <MailOutlineIcon style={{ color: "black" }} fontSize="large" />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="My Github">
-            <IconButton href="https://github.com/edgarchaidez" target="_blank">
-              <GitHubIcon style={{ color: "black" }} fontSize="large" />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="My LinkedIn">
-            <IconButton
-              href="https://www.linkedin.com/in/edgar-chaidez/"
-              target="_blank"
-            >
-              <LinkedInIcon style={{ color: "black" }} fontSize="large" />
-            </IconButton>
-          </Tooltip>
-        </div>
+        <Info />
         <div className={classes.Bio}>
           <p>Hi, this is Edgar. </p>
           <p>
@@ -56,30 +31,28 @@ const PortfolioScreen = () => {
             </span>
             and I'm currently searching for a full time job position as a
             software/full-stack engineer. I've always been interested in
-            creating user facing applications and especially ones that can
+            creating user facing applications and especially ones that
             hopefully make people's lives a bit better. I'm also continuing my
-            education with a Master's of Computer Science at ASU so any
+            education with a Master of Computer Science at ASU so
             internship opportunities are also welcomed.
           </p>
         </div>
         <ResumeButton />
         <div className={classes.Sections}>
           <h2>EDUCATION</h2>
-          <body>
             <Education />
-          </body>
           <h2>SKILLS</h2>
-          <body className={classes.Skills}>
+          <div className={classes.Skills}>
             <Skills />
-          </body>
+          </div>
           <h2>PROJECTS</h2>
-          <body>
+          <div>
             <Capstone />
             <NumberGuesser />
             <ToDoList />
             <WindAPI />
             <Website/>
-          </body>
+          </div>
         </div>
       </React.Fragment>
     );

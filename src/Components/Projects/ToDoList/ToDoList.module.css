@@ -7,12 +7,12 @@
 }
 
 .Images1 {
-    width: 90%;
+    width: 95%;
     margin-bottom: 20px;
 }
 
 .Images2 {
-    width: 90%;
+    width: 95%;
 }
 
 .icon {
@@ -21,14 +21,37 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 500px) {
+.icon a:hover {
+    color: black !important;
+}
+
+@media (min-width: 400px) {
+    .Images {
+        margin: 5px 5px;
+    }
 
     .Images1 {
-        width: 40%;
+        width: 90%;
+    }
+    
+    .Images2 {
+        width: 90%;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+}
+@media (min-width: 700px) {
+
+    .Images1 {
+        width: 46%;
         margin-bottom: 0;
     }
     
     .Images2 {
-        width: 40%;
+        width: 46%;
     }
 }

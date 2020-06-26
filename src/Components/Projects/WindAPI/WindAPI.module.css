@@ -3,25 +3,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    line-height: 33px !important;
+    border: 1px solid #d1cfcf;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .Images img {
-    width: 95%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
-.icon {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
+@media (min-width: 650px) {
+    .Images {
+        margin: 0.5rem;
+    }
 
-.icon a:hover{
-    color: black !important;
-}
-
-@media (min-width: 500px) {
     .Images img {
-        width: 98%;
+        width: 95%;
     }
 }

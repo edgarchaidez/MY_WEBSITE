@@ -1,0 +1,24 @@
+.About {
+    width: 70%;
+    line-height: 1.8em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.About h1 {
+    align-self: center;
+    margin-bottom: 70px;
+}
+
+.About p {
+    margin-bottom: 20px;
+}
+
+.Playlist {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

@@ -1,8 +1,6 @@
 import React from 'react';
 
 import CardUI from '../../shared/Card/CardUI';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -21,12 +19,12 @@ const Skills = () => {
     const rows = [
         {"Languages": "Java", "Tools": "React", "Other": "Agile Development"},
         {"Languages": "C++", "Tools": "Redux", "Other": "RESTful API's"},
-        {"Languages": "C", "Tools": "React Native", },
-        {"Languages": "C#", "Tools": "Git", },
-        {"Languages": "Python", "Tools": "GitHub"},
+        {"Languages": "C", "Tools": "React Native", "Other": "Linux/Unix"},
+        {"Languages": "C#", "Tools": "Git", "Other": "Mac OS"},
+        {"Languages": "Python", "Tools": "GitHub", },
         {"Languages": "JavaScript", "Tools": ".NET Framework"},
-        {"Languages": "HTML", },
-        {"Languages": "CSS", },
+        {"Languages": "HTML", "Tools": "JSON" },
+        {"Languages": "CSS", "Tools": "XML"},
         { "Languages": "SQL",},
     ];
 
@@ -50,10 +48,9 @@ const Skills = () => {
             <TableBody>
               {rows.map((row) => {
                 return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+                  <TableRow hover role="checkbox" tabIndex={-1} key={row.Languages}>
                     {columns.map((column) => {
                       const value = row[column.id];
-                      if (value === null) return;
                       return (
                         <TableCell key={column.id} align={column.align}>
                           {value}

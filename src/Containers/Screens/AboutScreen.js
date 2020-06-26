@@ -1,18 +1,30 @@
 import React from 'react'
-import logo from '../../logo.svg';
-import "./AboutScreen.css"
+
+import classes from "./AboutScreen.module.css"
 
 const AboutScreen = () => {
-    return(
-        <div>
-            <h1 style={{fontFamily: "Roboto"}}>EDGAR CHAIDEZ</h1>
-            <img src={logo} className="top-logo" alt="logo" />
-                <h2 className="introduction">
-                    Currently under construction
-                    <br />
-                    Please standby...
-                </h2>
+
+    return (
+      <React.Fragment>
+        <h1>EDGAR CHAIDEZ</h1>
+        <div className={classes.About}>
+          <h3>About Me</h3>
+          <p>
+          
+          </p>
         </div>
+        <div className={classes.Playlist}>
+          <iframe
+            title="Website Playlist"
+            src="https://open.spotify.com/embed/playlist/2JDeMrfFnT6XrT0sGtix8D"
+            width="70%"
+            height="380"
+            frameBorder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+      </React.Fragment>
     );
 }
 

@@ -3,48 +3,42 @@ import React from 'react';
 import app1 from "../../../assets/app1.png";
 import app2 from "../../../assets/app2.png";
 import CardUI from '../../../shared/Card/CardUI';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import { IconButton } from '@material-ui/core';
+import GithubIcon from '../../../shared/GithubIcon/GithubIcon';
+import List from '../../List/List';
 import classes from './NumberGuesser.module.css';
-import Tooltip from '@material-ui/core/Tooltip';
 
 const NumberGuesser = () => {
+
+  const tools = [
+    {"name": "React Native"},
+    {"name": "JavaScript"},
+    {"name": "Chrome Developer Tools"},
+  ];
+
+  const title = " React Native Mobile App";
+  const content = "This is a simple mobile app that I created as a practice project " +
+  "when I was first learning React Native. It takes in a two-digit " +
+  "number as input and attempts to guess this number by randomly " +
+  "generating a number of it's own. If the random number does not match " +
+  "the input number, it asks the user whether the random number is " +
+  "greater than or less than the input number."
+
   return (
-    <CardUI>
-        <CardContent>
-          <Typography variant="body" color="textPrimary" component="h3">
-            React Native Mobile App
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            I created this app while I was learning React Native. It's a simple
-            app that takes in a two digit number by the user and uses a number
-            generator to guess the user's number.
-          </Typography>
-        </CardContent>
-        <div className={classes["app-images"]}>
-          <img
-            className={classes["app-images1"]}
-            alt="A mobile app"
-            src={app1}
-          ></img>
-          <img
-            className={classes["app-images2"]}
-            alt="A mobile app part 2"
-            src={app2}
-          ></img>
-        </div>
-        <div className={classes.icon}>
-          <Tooltip title="GitHub Repo">
-          <IconButton href="https://github.com/edgarchaidez/NUMBER-GUESSER" target="_blank">
-            <GitHubIcon color="inherit" fontSize="large" />
-          </IconButton>
-          </Tooltip>
-        </div>
+    <CardUI title={title} content={content}>
+      <List list={tools} />
+      <div className={classes["app-images"]}>
+        <img
+          className={classes["app-images1"]}
+          alt="A mobile app"
+          src={app1}
+        ></img>
+        <img
+          className={classes["app-images2"]}
+          alt="A mobile app part 2"
+          src={app2}
+        ></img>
+      </div>
+      <GithubIcon url="https://github.com/edgarchaidez/NUMBER-GUESSER" />
     </CardUI>
   );
 };

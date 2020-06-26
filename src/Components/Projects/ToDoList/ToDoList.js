@@ -3,38 +3,43 @@ import React from 'react';
 import ToDoList1 from "../../../assets/ToDoList1.png";
 import ToDoList2 from "../../../assets/ToDoList2.png";
 import CardUI from '../../../shared/Card/CardUI';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import { IconButton } from '@material-ui/core';
 import classes from './ToDoList.module.css';
+import List from '../../List/List';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const ToDoList = () => {
+
+  const tools = [
+    {"name": "Java"},
+    {"name": "GitHub"},
+    {"name": "Eclipse IDE"},
+  ];
+
+  const title = "To-Do List Application";
+  const content =  "This was an academic group project where I worked in a team of 4. We " +
+  "were instructed to create a to-do list application with a graphical " +
+  "user interface using Java which supported features such as adding, " +
+  "deleting, updating, sorting, and saving/loading the list. Each item " +
+  "on the list had a priority number, description, due date, and status " +
+  "indicating whether the task has been completed. My role was to " +
+  "create and test the functions required to update the list, namely " +
+  "functions for adding, deleting. updating, and sorting the list which " +
+  "were implemented using the ArrayList class in Java."
+
   return (
-    <CardUI>
-      <CardContent>
-        <Typography variant="body" color="textPrimary" component="h3">
-          To-Do List Application in Java
-        </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
-          I created this app while I was learning React Native. It's a simple
-          app that takes in a two digit number by the user and uses a number
-          generator to guess the user's number.
-        </Typography>
-      </CardContent>
+    <CardUI title={title} content={content}>
+        <List list={tools} />
       <div className={classes.Images}>
         <img
           className={classes.Images1}
-          alt="A mobile app"
+          alt="To-do list app options menu"
           src={ToDoList1}
         ></img>
         <img
           className={classes.Images2}
-          alt="A mobile app part 2"
+          alt="To-do list app adding task"
           src={ToDoList2}
         ></img>
       </div>

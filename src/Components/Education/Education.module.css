@@ -1,3 +1,7 @@
+.Content {
+    padding-bottom: 0px !important;
+}
+
 .Logo a{
     display: flex;
     justify-content: center;
@@ -6,6 +10,24 @@
 .Logo img  {
     width: 50%;
     cursor: pointer;
+}
+
+.Typography {
+    display: flex;
+    flex-direction: column;
+}
+
+.Typography h3 {
+    font-weight: 600;
+}
+
+.Typography h4 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Typography p {
+    margin-bottom: 0;
 }
 
 @media (min-width: 500px) {

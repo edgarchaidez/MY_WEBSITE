@@ -1,4 +1,4 @@
-.Course {
+.ListItem {
     height: 20px;
     line-height: 33px !important;
     margin: 0.5rem;
@@ -8,8 +8,14 @@
     align-items: center;
 }
 
-.Course p {
+.ListItem p {
     font-size: 13px;
+}
+
+@media (max-width: 310px) {
+    .ListItem p {
+        font-size: 11px !important;
+    }
 }
 
 

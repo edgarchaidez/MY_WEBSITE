@@ -1,41 +1,38 @@
 import React from 'react';
 
 import CardUI from '../../../shared/Card/CardUI';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import { IconButton } from '@material-ui/core';
-import Tooltip from '@material-ui/core/Tooltip';
+import GitHubIcon from '../../../shared/GithubIcon/GithubIcon';
 import classes from './WindAPI.module.css';
 import windAPI from '../../../assets/WindAPI.png';
+import List from '../../List/List';
 
 const WindAPI = () => {
+    
+    const tools = [
+        {"name": "C#"},
+        {"name": ".NET Framework"},
+        {"name": "WCF Service"},
+        {"name": "ASP.NET Web Application"},
+    ];
+
+    const title = "Wind Speed API";
+    const content = "I developed this API as a WCF Service Application using .NET Framework " +
+    "as a means to determine the wind speeds of a location and in turn whether that location would " +
+    "be a good place to set up renewable wind energy sources. The API takes in a pair of coordinates " +
+    "which it then passes to OpenWeather's 5-day forecast API. It extracts the location and wind data " +
+    "from the OpenWeather API and calculates the minimum, maximum, and average wind speeds " +
+    "for that location. I used an ASP.NET Web Application (image below) to try out the API.";
+
     return (
-      <CardUI>
-        <CardContent>
-          <Typography variant="body" color="textPrimary" component="h3">
-            Wind Speed API
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Some stuff
-          </Typography>
-        </CardContent>
+      <CardUI title={title} content={content}>
+        <List list={tools} />
         <div className={classes.Images}>
           <img
             src={windAPI}
-            alt="Wind speed service api"
+            alt="Web application showcasing wind speed service api"
           />
         </div>
-        <div className={classes.icon}>
-          <Tooltip title="GitHub Repo">
-            <IconButton
-              href="https://github.com/edgarchaidez/wind-speed-api"
-              target="_blank"
-            >
-              <GitHubIcon className={classes.git} color="inherit" fontSize="large" />
-            </IconButton>
-          </Tooltip>
-        </div>
+        <GitHubIcon url="https://github.com/edgarchaidez/wind-speed-api" />
       </CardUI>
     );
 };

@@ -17,12 +17,8 @@
 
 .Sections p {
     text-transform: none;
-}
-
-.SocialMedias {
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 50px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .Skills {
@@ -39,13 +35,13 @@
     letter-spacing: 0.03em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .Bio {
         width: 90%;
     }
 
     .Sections {
-        width: 95%;
+        width: 98%;
     }
 
     .Skills {
@@ -56,7 +52,7 @@
 @media (max-width: 350px) {
 
     .Skills {
-        width: 83%;
+        width: 81%;
     }
 }
 

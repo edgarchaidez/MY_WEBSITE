@@ -5,18 +5,18 @@ import Typography from '@material-ui/core/Typography';
 
 const Copyright = () => {
   return (
-      <div style={{marginTop: "20px", marginBottom: "20px"}}>
-    <Typography variant="body2" color="textSecondary" align="center">
-      <Typography variant="subtitle2" color="textSecondary" align="center" >
-          {"Made with React"}
+    <div style={{ marginBottom: "20px" }}>
+      <Typography variant="body1" color="textSecondary" align="center">
+        {"Made with React"}
       </Typography>
-      {"© "}
-      <Link color="inherit" href="">
-        EDGAR CHAIDEZ
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
+      <Typography variant="subtitle2" color="textSecondary" align="center">
+        {"© "}
+        <Link color="inherit" href="/">
+          EDGAR CHAIDEZ
+        </Link>{" "}
+        {new Date().getFullYear()}
+        {"."}
+      </Typography>
     </div>
   );
 };

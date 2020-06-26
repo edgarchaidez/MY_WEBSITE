@@ -13,5 +13,6 @@
     border-left: 50vw solid rgb(255, 220, 22);*/
     background: linear-gradient(90deg, #ffcc01 50%, #0055ff 0);
     position: fixed;
+    z-index: 100;
 }
 
