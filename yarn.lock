@@ -9818,14 +9818,6 @@ react-scripts@^3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-simple-image-slider@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-simple-image-slider/-/react-simple-image-slider-1.0.3.tgz#b9f45b676e2544291c6229ee78277d316640693c"
-  integrity sha512-6DUQSZNdP86zbpLq1od1xa8VFrbGHTjFuUAeV8cRaS3N1mrxorSW7hVm+igEyn7f9TpYbyZZPU0d9XKzqZ35pw==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    prop-types "^15.6.2"
-
 react-transition-group@^4.4.0:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
@@ -11279,9 +11271,9 @@ tmp@^0.0.33:
     os-tmpdir "~1.0.2"
 
 tmpl@1.0.x:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.4.tgz#23640dd7b42d00433911140820e5cf440e521dd1"
-  integrity sha1-I2QN17QtAEM5ERQIIOXPRA5SHdE=
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
+  integrity sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
